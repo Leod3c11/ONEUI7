@@ -377,12 +377,13 @@ config MALI_HW_ERRATA_1485982_USE_CLOCK_ALTERNATIVE
 endif
 
 config MALI_ARBITRATION
-	boolean "Enable Virtualization reference code"
+	bool "Enable Virtualization reference code"
 	depends on MALI_MIDGARD
 	default n
 	help
 	  Enables the build of several reference modules used in the reference
-	  virtualization setup for Mali
+	  virtualization setup for Mali.
+
 	  If unsure, say N.
 
 config MALI_TRACE_POWER_GPU_WORK_PERIOD
