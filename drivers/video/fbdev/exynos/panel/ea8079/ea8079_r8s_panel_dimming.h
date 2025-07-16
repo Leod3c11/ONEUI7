@@ -241,6 +241,42 @@ static struct gm2_dimming_lut r8s_dimming_lut[MAX_EA8079_VRR][MAX_EA8079_GAMMA_B
 		GM2_LUT_V0_INIT_SRC(r8s_ctbl_dummy, EA8079_VRR_FPS_60),
 		GM2_LUT_V0_INIT_SRC(r8s_ctbl_dummy, EA8079_VRR_FPS_60),
 	},
+	/* 48 Hz */
+	[EA8079_VRR_48HS][EA8079_GAMMA_BR_INDEX_0 ... MAX_EA8079_GAMMA_BR_INDEX - 1]  = {
+		GM2_LUT_V0_INIT_SRC(r8s_ctbl_dummy, EA8079_VRR_FPS_48),
+		GM2_LUT_V0_INIT_SRC(r8s_ctbl_dummy, EA8079_VRR_FPS_48),
+		GM2_LUT_V0_INIT_SRC(r8s_ctbl_dummy, EA8079_VRR_FPS_48),
+		GM2_LUT_V0_INIT_SRC(r8s_ctbl_dummy, EA8079_VRR_FPS_48),
+		GM2_LUT_V0_INIT_SRC(r8s_ctbl_dummy, EA8079_VRR_FPS_48),
+		GM2_LUT_V0_INIT_SRC(r8s_ctbl_dummy, EA8079_VRR_FPS_48),
+	},
+	/* 30 Hz */
+	[EA8079_VRR_30HS][EA8079_GAMMA_BR_INDEX_0 ... MAX_EA8079_GAMMA_BR_INDEX - 1]  = {
+		GM2_LUT_V0_INIT_SRC(r8s_ctbl_dummy, EA8079_VRR_FPS_30),
+		GM2_LUT_V0_INIT_SRC(r8s_ctbl_dummy, EA8079_VRR_FPS_30),
+		GM2_LUT_V0_INIT_SRC(r8s_ctbl_dummy, EA8079_VRR_FPS_30),
+		GM2_LUT_V0_INIT_SRC(r8s_ctbl_dummy, EA8079_VRR_FPS_30),
+		GM2_LUT_V0_INIT_SRC(r8s_ctbl_dummy, EA8079_VRR_FPS_30),
+		GM2_LUT_V0_INIT_SRC(r8s_ctbl_dummy, EA8079_VRR_FPS_30),
+	},
+	/* 24 Hz */
+	[EA8079_VRR_24HS][EA8079_GAMMA_BR_INDEX_0 ... MAX_EA8079_GAMMA_BR_INDEX - 1]  = {
+		GM2_LUT_V0_INIT_SRC(r8s_ctbl_dummy, EA8079_VRR_FPS_24),
+		GM2_LUT_V0_INIT_SRC(r8s_ctbl_dummy, EA8079_VRR_FPS_24),
+		GM2_LUT_V0_INIT_SRC(r8s_ctbl_dummy, EA8079_VRR_FPS_24),
+		GM2_LUT_V0_INIT_SRC(r8s_ctbl_dummy, EA8079_VRR_FPS_24),
+		GM2_LUT_V0_INIT_SRC(r8s_ctbl_dummy, EA8079_VRR_FPS_24),
+		GM2_LUT_V0_INIT_SRC(r8s_ctbl_dummy, EA8079_VRR_FPS_24),
+	},
+	/* 10 Hz */
+	[EA8079_VRR_10HS][EA8079_GAMMA_BR_INDEX_0 ... MAX_EA8079_GAMMA_BR_INDEX - 1]  = {
+		GM2_LUT_V0_INIT_SRC(r8s_ctbl_dummy, EA8079_VRR_FPS_10),
+		GM2_LUT_V0_INIT_SRC(r8s_ctbl_dummy, EA8079_VRR_FPS_10),
+		GM2_LUT_V0_INIT_SRC(r8s_ctbl_dummy, EA8079_VRR_FPS_10),
+		GM2_LUT_V0_INIT_SRC(r8s_ctbl_dummy, EA8079_VRR_FPS_10),
+		GM2_LUT_V0_INIT_SRC(r8s_ctbl_dummy, EA8079_VRR_FPS_10),
+		GM2_LUT_V0_INIT_SRC(r8s_ctbl_dummy, EA8079_VRR_FPS_10),
+	},
 };
 
 struct gm2_dimming_init_info ea8079_r8s_gm2_dimming_init_info[] = {
