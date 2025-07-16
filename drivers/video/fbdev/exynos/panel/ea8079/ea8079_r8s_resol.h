@@ -37,12 +37,40 @@ struct panel_vrr ea8079_r8s_default_panel_vrr[] = {
 		.te_hw_skip_count = 0,
 		.mode = VRR_HS_MODE,
 	},
+	[EA8079_VRR_48HS] = {
+		.fps = 48,
+		.te_sw_skip_count = 0,
+		.te_hw_skip_count = 0,
+		.mode = VRR_HS_MODE,
+	},
+	[EA8079_VRR_30HS] = {
+		.fps = 30,
+		.te_sw_skip_count = 0,
+		.te_hw_skip_count = 0,
+		.mode = VRR_HS_MODE,
+	},
+	[EA8079_VRR_24HS] = {
+		.fps = 24,
+		.te_sw_skip_count = 0,
+		.te_hw_skip_count = 0,
+		.mode = VRR_HS_MODE,
+	},
+	[EA8079_VRR_10HS] = {
+		.fps = 10,
+		.te_sw_skip_count = 0,
+		.te_hw_skip_count = 0,
+		.mode = VRR_HS_MODE,
+	},
 };
 
 static struct panel_vrr *ea8079_r8s_default_vrrtbl[] = {
 	&ea8079_r8s_default_panel_vrr[EA8079_VRR_120HS],
 	&ea8079_r8s_default_panel_vrr[EA8079_VRR_96HS],
 	&ea8079_r8s_default_panel_vrr[EA8079_VRR_60HS],
+	&ea8079_r8s_default_panel_vrr[EA8079_VRR_48HS],
+	&ea8079_r8s_default_panel_vrr[EA8079_VRR_30HS],
+	&ea8079_r8s_default_panel_vrr[EA8079_VRR_24HS],
+	&ea8079_r8s_default_panel_vrr[EA8079_VRR_10HS],
 };
 
 static struct panel_resol ea8079_r8s_default_resol[] = {
@@ -79,12 +107,36 @@ static struct common_panel_display_mode ea8079_r8s_display_mode[] = {
 		.resol = &ea8079_r8s_default_resol[EA8079_RESOL_1080x2400],
 		.vrr = &ea8079_r8s_default_panel_vrr[EA8079_VRR_60HS],
 	},
+	[EA8079_DISPLAY_MODE_1080x2400_48HS] = {
+		.name = PANEL_DISPLAY_MODE_1080x2400_48HS,
+		.resol = &ea8079_r8s_default_resol[EA8079_RESOL_1080x2400],
+		.vrr = &ea8079_r8s_default_panel_vrr[EA8079_VRR_48HS],
+	},
+	[EA8079_DISPLAY_MODE_1080x2400_30HS] = {
+		.name = PANEL_DISPLAY_MODE_1080x2400_30HS,
+		.resol = &ea8079_r8s_default_resol[EA8079_RESOL_1080x2400],
+		.vrr = &ea8079_r8s_default_panel_vrr[EA8079_VRR_30HS],
+	},
+	[EA8079_DISPLAY_MODE_1080x2400_24HS] = {
+		.name = PANEL_DISPLAY_MODE_1080x2400_24HS,
+		.resol = &ea8079_r8s_default_resol[EA8079_RESOL_1080x2400],
+		.vrr = &ea8079_r8s_default_panel_vrr[EA8079_VRR_24HS],
+	},
+	[EA8079_DISPLAY_MODE_1080x2400_10HS] = {
+		.name = PANEL_DISPLAY_MODE_1080x2400_10HS,
+		.resol = &ea8079_r8s_default_resol[EA8079_RESOL_1080x2400],
+		.vrr = &ea8079_r8s_default_panel_vrr[EA8079_VRR_10HS],
+	},
 };
 
 static struct common_panel_display_mode *ea8079_r8s_display_mode_array[] = {
 	[EA8079_DISPLAY_MODE_1080x2400_120HS] = &ea8079_r8s_display_mode[EA8079_DISPLAY_MODE_1080x2400_120HS],
 	[EA8079_DISPLAY_MODE_1080x2400_96HS] = &ea8079_r8s_display_mode[EA8079_DISPLAY_MODE_1080x2400_96HS],
 	[EA8079_DISPLAY_MODE_1080x2400_60HS] = &ea8079_r8s_display_mode[EA8079_DISPLAY_MODE_1080x2400_60HS],
+	[EA8079_DISPLAY_MODE_1080x2400_48HS] = &ea8079_r8s_display_mode[EA8079_DISPLAY_MODE_1080x2400_48HS],
+	[EA8079_DISPLAY_MODE_1080x2400_30HS] = &ea8079_r8s_display_mode[EA8079_DISPLAY_MODE_1080x2400_30HS],
+	[EA8079_DISPLAY_MODE_1080x2400_24HS] = &ea8079_r8s_display_mode[EA8079_DISPLAY_MODE_1080x2400_24HS],
+	[EA8079_DISPLAY_MODE_1080x2400_10HS] = &ea8079_r8s_display_mode[EA8079_DISPLAY_MODE_1080x2400_10HS],
 };
 
 static struct common_panel_display_modes ea8079_r8s_display_modes = {
